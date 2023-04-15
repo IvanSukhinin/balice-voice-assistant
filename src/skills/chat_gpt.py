@@ -15,7 +15,8 @@ class ChatGPT():
 		    model="gpt-3.5-turbo",
 			messages=[
 				{"role": "user", "content": text}
-			]
+			],
+			max_tokens=800
 		)
 
 		return response.choices[0].message.content
