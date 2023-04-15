@@ -1,6 +1,7 @@
 ## Voice assistant
 ### Installation
 Required python v3.11 to run
+
 Ubuntu
 ```sh
 sudo apt install install sox ffmpeg libcairo2 libcairo2-dev python3-dev
@@ -19,14 +20,18 @@ Install dependencies
 pip3 install -r requirements.txt
 ```
 Change microphone config in config.py
-for microphone id
+
+Microphone id:
 ```sh
 python3 -m sounddevice
 ```
 Download stt vosk model
+
 https://alphacephei.com/vosk/models
-Paste your api tokens into api_tokens.json
+
+Create src/api_tokens.json and paste your api tokens
 ### Run
 ```sh
+cd src
 python3 main.py
 ```
